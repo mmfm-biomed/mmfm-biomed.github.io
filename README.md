@@ -1,6 +1,6 @@
 # MMFM-BIOMED Website
 
-Static website for the **MMFM-BIOMED @ CVPR 2025** workshop.
+Static website for the **2nd MMFM-BIOMED @ CVPR 2026** workshop.
 
 ## Files
 
