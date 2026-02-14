@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CVPR 2026 Surgical Video Challenge - Call for Competition Submissions.">
+  <title>Competition | MMFM-BIOMED @ CVPR 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">MMFM-BIOMED</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#speakers">Speakers</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="index.html#cfp">Call for Papers</a>
+        <a href="competition.html">Competition</a>
+        <a href="index.html#organizers">Organizers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">CVPR 2026 Surgical Video Challenge</p>
+        <h1>Call for Competition Submissions</h1>
+        <p class="subtitle">MMFM-BIOMED @ CVPR 2026</p>
+        <div class="hero-cta">
+          <a class="button ghost" href="index.html">Back to Main Page</a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section alt">
+      <div class="container narrow">
+        <p>
+          The <strong>CVPR 2026 Surgical Video Challenge</strong> aims to benchmark progress in
+          <strong>multimodal understanding and reasoning for surgical videos</strong>, emphasizing models that can perceive,
+          interpret, and generate insights from complex surgical scenes. The competition features multiple sub-tasks under a
+          unified <em>Surgical Video Question Answering (QA)</em> framework, including <em>surgical error detection</em>,
+          <em>skill assessment</em>, and <em>feedback generation</em>.
+        </p>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>(a) Datasets Used</h3>
+            <p>
+              The challenge will leverage datasets curated under the <strong>SOAR (Surgery Objective Analysis and Review)</strong>
+              initiative, including laparoscopic and endoscopic videos. A key resource is a newly developed web-scale surgical
+              dataset containing over <strong>100,000 surgical videos</strong> with automatically transcribed ASR text and QA pairs
+              covering procedural understanding, surgical safety, and instrument usage.
+            </p>
+            <p>
+              A private SOAR dataset with synchronized multi-view video, tool trajectories, and expert-annotated QA pairs will be used
+              for the official leaderboard. Standardized training, validation, and test splits will be provided.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>(b) Dataset Availability and Contingency Plan</h3>
+            <p>
+              SOAR datasets are currently undergoing data cleaning, quality verification, and de-identification, with public release
+              targeted for <strong>February 2026</strong>.
+            </p>
+            <ul>
+              <li>Release preliminary de-identified subsets for early model development.</li>
+              <li>Provide synthetic pre-training data from public datasets (e.g., Cholec80, HeiSurf, EndoVis).</li>
+              <li>Adjust competition timeline if needed, with transparent communication.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cards two" style="margin-top: 1rem;">
+          <article class="card">
+            <h3>(c) Ethical Considerations</h3>
+            <p>
+              All surgical data will be fully de-identified in compliance with IRB and <strong>HIPAA</strong> guidelines. No
+              personally identifiable information (patient faces, voices, or identifying metadata) will be included.
+            </p>
+            <p>
+              Participating institutions have IRB approval for secondary use of surgical data. Participants must sign a
+              <strong>data usage agreement</strong> prohibiting re-identification and limiting model use to research and education.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>(d) Evaluation Protocol</h3>
+            <ul>
+              <li>QA accuracy and reasoning quality (BLEU, ROUGE, and LLM-based reasoning consistency).</li>
+              <li>Error detection (F1, precision, recall).</li>
+              <li>Skill assessment and feedback generation (Spearman correlation and expert rationale alignment).</li>
+            </ul>
+            <p>
+              Top-performing models will be reviewed by a joint panel of clinical experts and AI researchers. Final rankings combine
+              quantitative metrics and expert evaluation.
+            </p>
+          </article>
+        </div>
+
+        <article class="card" style="margin-top: 1rem;">
+          <h3>(e) Competition Timeline</h3>
+          <ul>
+            <li><strong>Dataset Release &amp; Competition Launch:</strong> March 1, 2026</li>
+            <li><strong>Submission Deadline:</strong> May 25, 2026</li>
+            <li><strong>Notification to Participants:</strong> May 28, 2026</li>
+            <li><strong>Camera-ready Deadline:</strong> May 31, 2026</li>
+            <li><strong>Results Presentation &amp; Awards:</strong> June 3, 2026</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Contact:</strong> <a href="mailto:mmfm-biomed@googlegroups.com">mmfm-biomed@googlegroups.com</a></p>
+      <p>MMFM-BIOMED @ CVPR 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
