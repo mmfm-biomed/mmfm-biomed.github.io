@@ -390,7 +390,7 @@ a {
 
 .papers-table {
   width: 100%;
-  min-width: 800px;
+  min-width: 560px;
   border-collapse: collapse;
   font-size: 0.92rem;
   line-height: 1.5;
@@ -497,7 +497,6 @@ a {
 .papers-table .paper-title {
   font-weight: 600;
   color: #091133;
-  max-width: 28rem;
 }
 
 .papers-table-hint {
@@ -509,12 +508,6 @@ a {
 @media (max-width: 800px) {
   .papers-table-hint {
     display: block;
-  }
-}
-
-@media (min-width: 900px) {
-  .papers-table .paper-title {
-    max-width: none;
   }
 }
 
