@@ -253,7 +253,8 @@ a {
 
 .people-grid {
   margin-top: 1.2rem;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  /* Invited speakers: four equal columns; shared base for other people grids */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .organizers {
@@ -261,6 +262,7 @@ a {
 }
 
 .person-card {
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -271,6 +273,13 @@ a {
 .person-card h3 {
   margin: 0.5rem 0 0.25rem;
   font-size: 1.08rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.person-card h3 a {
+  overflow-wrap: inherit;
+  word-break: inherit;
 }
 
 .person-card p {
@@ -354,6 +363,12 @@ a {
   font-weight: 600;
 }
 
+.notice del {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  color: #b8c4f0;
+}
+
 .muted {
   color: var(--muted);
 }
@@ -372,9 +387,13 @@ a {
 
 .papers-table-outer {
   margin-top: 1.75rem;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .papers-table-scroll {
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-lg);
@@ -390,7 +409,9 @@ a {
 
 .papers-table {
   width: 100%;
-  min-width: 560px;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
   font-size: 0.92rem;
   line-height: 1.5;
@@ -410,7 +431,9 @@ a {
   color: #1a2870;
   padding: 0.85rem 1rem;
   border-bottom: 2px solid #c5cef0;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .papers-table th.col-board {
@@ -447,7 +470,7 @@ a {
 
 .papers-table .col-format,
 .papers-table .pres-cell {
-  width: 1%;
+  width: 6.5rem;
   white-space: nowrap;
   vertical-align: middle;
 }
@@ -497,6 +520,13 @@ a {
 .papers-table .paper-title {
   font-weight: 600;
   color: #091133;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.papers-table .col-title {
+  width: auto;
 }
 
 .papers-table-hint {
@@ -537,6 +567,11 @@ a {
   .organizers {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  /* Four invited speakers: uniform 2×2 instead of 3+1 */
+  #speakers .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -557,6 +592,10 @@ a {
 @media (max-width: 470px) {
   .people-grid,
   .organizers {
+    grid-template-columns: 1fr;
+  }
+
+  #speakers .people-grid {
     grid-template-columns: 1fr;
   }
 }
