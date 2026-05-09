@@ -526,7 +526,23 @@ a {
 }
 
 .papers-table .col-title {
-  width: auto;
+  width: 30%;
+  min-width: 0;
+}
+
+.papers-table .col-authors {
+  width: 36%;
+  min-width: 0;
+}
+
+.papers-table .paper-authors {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #3d4565;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.45;
+  hyphens: auto;
 }
 
 .papers-table-hint {
